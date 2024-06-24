@@ -1,5 +1,2 @@
-# Ignore npm package lock file
 package-lock.json
-# Ignore environment variables file
-.env
 node_modules
