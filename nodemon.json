@@ -1,0 +1,7 @@
+{
+    "watch": ["index.js", "service/"],
+    "ignore": ["node_modules/", "public/", "*.log"],
+    "ext": "js",
+    "exec": "node index.js"
+}
+  
