@@ -74,7 +74,7 @@ wsServer.on("connection", async (connection, request) => {
                 const response = await authManager.fetchFileToPod(endpoint);
                 const data = await response.json();
                 modelManager.addWeightsList(data);
-                //await smartContractManager.recordAccess(storageUrl); //Registrazione Accesso in Blockchain
+                await smartContractManager.recordAccess(storageUrl); //Registrazione Accesso in Blockchain
                 await modelManager.updateModel(); //Aggirona il modello Globale
 
                 //Viene inviato il modello aggiornato a tutti i Client Connessi
